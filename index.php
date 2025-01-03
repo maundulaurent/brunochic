@@ -24,42 +24,42 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero_1.jpg" alt="">
+          <img src="assets/img/neo/hero_4.png" alt="">
           <div class="carousel-container">
-            <h2>Farming is the best solution of worlds starvation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Quality Chicks, Healthy Growth, Happy Farms!</h2>
+            <p>Explore a wide range of healthy, high-yielding poultry breeds for your farm's success.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero_2.jpg" alt="">
+          <img src="assets/img/neo/hero_1.jpg" alt="">
           <div class="carousel-container">
-            <h2>Organic vegetables is good for health</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+            <h2>Sustainable Farming Starts Here</h2>
+            <p>Invest in eco-friendly poultry practices with our premium-quality chicks and equipment.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero_3.jpg" alt="">
+          <img src="assets/img/neo/hero_3.jpg" alt="">
           <div class="carousel-container">
-            <h2>Providing Fresh Produce Every Single Day</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <h2>The Best Breeds for Every Need</h2>
+            <p>From layers to broilers, find the perfect chicks to grow your farm's potential.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero_4.jpg" alt="">
+          <img src="assets/img/neo/hero_4.jpg" alt="">
           <div class="carousel-container">
-            <h2>Farming as a Passione</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius.</p>
+            <h2>Hatching Success, One Chick at a Time</h2>
+            <p> Get access to hatching eggs and expert care advice for a thriving poultry business.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero_5.jpg" alt="">
+          <img src="assets/img/neo/hero_5.jpg" alt="">
           <div class="carousel-container">
-            <h2>Good Food For All</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Healthy Chickens, Happy Customers</h2>
+            <p>Deliver top-quality produce to your customers with our reliable poultry solutions.</p>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -77,13 +77,43 @@
 
     </section><!-- /Hero Section -->
 
+        <!-- About 2 Section -->
+    <section id="about-3" class="about-3 section">
+      <div class="container">
+        <div class="row gy-4 justify-content-between align-items-center">
+          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
+            <img src="assets/img/neo/about_1.AVIF" alt="Image" class="img-fluid">
+            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">
+              <span class="play"><i class="bi bi-play-fill"></i></span>
+            </a> -->
+          </div>
+          <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="content-title mb-4">Raising the Future of Farming, One Chick at a Time</h2>
+            <p class="mb-4">
+              At Neochicks, we’re committed to providing high-quality poultry breeds, 
+              expert advice, and farm-ready solutions. Whether you’re a seasoned farmer or 
+              just starting out, our chicks are raised with care and optimized for performance. 
+              Together, we’re building sustainable and thriving farms.
+            </p>
+            <ul class="list-unstyled list-check">
+              <li>Healthy, high-performing chicks for every farming need.</li>
+              <li>Expert guidance to ensure your farm's success.</li>
+              <li>Reliable, eco-friendly farming practices.</li>
+            </ul>
+
+            <p><a href="about" class="btn-cta">About Us</a></p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About 3 Section -->
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>SERVICES</h2>
-        <p>Providing Fresh Produce Every Single Day</p>
+        <h2>OUR CATEGORIES</h2>
+        <p>Explore a Wide Range of Poultry and Farming Essentials</p>
       </div><!-- End Section Title -->
       <div class="content">
         <div class="container">
@@ -92,18 +122,12 @@
               <div class="service-item">
                 <span class="number">01</span>
                 <div class="service-item-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" x="0" y="0" viewBox="0 0 509.435 509.435" style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
-                    <g>
-                      <path d="M7.506 347.639c.994 0 2.005-.199 2.976-.619l62.037-26.857a7.5 7.5 0 0 0 3.903-9.862 7.5 7.5 0 0 0-9.862-3.903L4.523 333.255a7.501 7.501 0 0 0 2.983 14.384zM500.883 283.197c-10.953-10.952-28.175-11.423-39.689-1.267l-10.034-13.307c-19.783-26.239-46.1-46.623-76.103-58.948a7.5 7.5 0 0 0-5.699 13.875c11.136 4.575 21.708 10.382 31.567 17.249h-22.621c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h41.188a169.382 169.382 0 0 1 19.691 21.855l11.048 14.652-71.171 67.597h-19.48a35.772 35.772 0 0 0 6.775-20.976c0-19.837-16.139-35.975-35.976-35.975h-75.023l-48.33-15.005a160.871 160.871 0 0 0-37.992-6.934l2.533-3.359a169.852 169.852 0 0 1 19.67-21.855h27.398c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-8.848a165.125 165.125 0 0 1 38.01-19.73c28.992-10.532 60.376-12.89 90.754-6.821a7.498 7.498 0 0 0 8.824-5.885 7.5 7.5 0 0 0-5.885-8.824 184.517 184.517 0 0 0-28.616-3.4v-83.727h64.189c43.49 0 78.872-35.382 78.872-78.872V22.488c0-8.712-7.088-15.801-15.801-15.801h-51.729c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h51.729c.441 0 .801.359.801.801v11.051c0 35.219-28.653 63.872-63.872 63.872h-64.189V85.559c0-28.082 18.793-53.262 45.701-61.234a7.5 7.5 0 1 0-4.261-14.382c-15.972 4.732-30.338 14.681-40.451 28.015-10.46 13.79-15.988 30.25-15.988 47.601v16.416c-9.59-9.839-22.97-15.965-37.762-15.965h-43.432c-6.193 0-11.232 5.039-11.232 11.232v23.629c0 29.093 23.669 52.762 52.763 52.762h39.663v22.475a183.375 183.375 0 0 0-55.199 10.86c-32.974 11.978-61.705 33.297-83.085 61.653l-9.313 12.351a161.07 161.07 0 0 0-54.289 12.692 7.5 7.5 0 0 0-3.949 9.844 7.498 7.498 0 0 0 9.844 3.949c31.858-13.616 67.62-15.458 100.696-5.188l49.416 15.343c.72.224 1.47.337 2.224.337h76.161c11.566 0 20.976 9.409 20.976 20.975s-9.409 20.976-20.976 20.976h-71.803c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h123.477a7.5 7.5 0 0 0 5.165-2.062l83.48-79.289c5.56-5.279 14.158-5.167 19.577.252a13.957 13.957 0 0 1 .853 18.9l-80.942 97.046a37.161 37.161 0 0 1-21.112 12.581L259.57 448.474c-20.377 4.113-41.89 1.365-60.575-7.739l-53.332-25.982a7.507 7.507 0 0 0-6.884.162L3.903 488.665a7.5 7.5 0 0 0 7.197 13.161l131.475-71.888 49.849 24.285c21.631 10.538 46.53 13.72 70.114 8.957l129.506-26.146a52.209 52.209 0 0 0 29.663-17.677l80.942-97.046c9.682-11.61 8.923-28.426-1.766-39.114zM258.212 158.634c-20.822 0-37.763-16.94-37.763-37.762V101.01h39.664c20.822 0 37.762 16.94 37.762 37.762v19.861h-39.663z" fill="currentColor" opacity="1" data-original="currentColor"></path>
-                      <path d="M319.171 240.778a7.5 7.5 0 0 0-7.5-7.5h-9.43c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h9.43a7.5 7.5 0 0 0 7.5-7.5zM272.068 264.08c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h34.888c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5zM400.305 307.996c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-8.172c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5z" fill="currentColor" opacity="1" data-original="currentColor"></path>
-                    </g>
-                  </svg>
+                  <img src="assets/img/neo/category_1.jpg" alt="Image" class="img-fluid" style="width: 98px;">
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Planting</h3>
+                  <h3 class="service-heading">Layer Chicks</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Premium breeds for egg production with high laying efficiency.
                   </p>
                 </div>
               </div>
@@ -121,10 +145,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Mulching</h3>
+                  <h3 class="service-heading">Broiler Chicks</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Fast-growing breeds designed for high-quality meat production.
                   </p>
                 </div>
               </div>
@@ -142,10 +165,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Plowing</h3>
+                  <h3 class="service-heading">Dual-Purpose Chicks</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Versatile breeds for both egg and meat production.
                   </p>
                 </div>
               </div>
@@ -161,10 +183,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Mowing</h3>
+                  <h3 class="service-heading">Specialty Breeds</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Unique and exotic breeds for niche farming or decorative purposes.
                   </p>
                 </div>
               </div>
@@ -182,10 +203,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Seeding</h3>
+                  <h3 class="service-heading">Hatching Eggs</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Fertilized eggs from healthy breeds for breeding programs.
                   </p>
                 </div>
               </div>
@@ -202,10 +222,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Fresh Vegetables</h3>
+                  <h3 class="service-heading">Poultry Feed</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  High-quality feed and supplements to boost growth and health.
                   </p>
                 </div>
               </div>
@@ -222,10 +241,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Watering</h3>
+                  <h3 class="service-heading">Farming Equipment</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Essential tools like incubators, feeders, and heating systems.
                   </p>
                 </div>
               </div>
@@ -242,10 +260,9 @@
                   </svg>
                 </div>
                 <div class="service-item-content">
-                  <h3 class="service-heading">Vegetable selling</h3>
+                  <h3 class="service-heading">Custom Solutions</h3>
                   <p>
-                    Gravida sodales condimentum pellen tesq accumsan orci quam
-                    sagittis sapie
+                  Tailored advice and solutions to meet your farm's unique needs.
                   </p>
                 </div>
               </div>
@@ -255,7 +272,7 @@
       </div>
     </section><!-- /Services Section -->
 
-    <!-- About Section -->
+    <!-- Why CHoose Us Section -->
     <section id="about" class="about section">
 
       <div class="content">
@@ -267,34 +284,32 @@
             <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <h3 class="content-subtitle text-white opacity-50">Why Choose Us</h3>
               <h2 class="content-title mb-4">
-                More than <strong>50 year experience</strong> in agriculture
-                industry
+              Trusted <strong>Expertise</strong> in Poultry Farming
               </h2>
               <p class="opacity-50">
-                Reprehenderit, odio laboriosam? Blanditiis quae ullam quasi illum
-                minima nostrum perspiciatis error consequatur sit nulla.
+                Having many years of experience in the poultry industry, we pride ourselves on delivering exceptional quality, reliable breeds, and innovative solutions to farmers across the country.
               </p>
 
               <div class="row my-5">
                 <div class="col-lg-12 d-flex align-items-start mb-4">
                   <i class="bi bi-cloud-rain me-4 display-6"></i>
                   <div>
-                    <h4 class="m-0 h5 text-white">Plants needs rain</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="m-0 h5 text-white">Healthy Chicks</h4>
+                    <p class="text-white opacity-50">Raised in optimal conditions to ensure productivity and resilience.</p>
                   </div>
                 </div>
                 <div class="col-lg-12 d-flex align-items-start mb-4">
                   <i class="bi bi-heart me-4 display-6"></i>
                   <div>
-                    <h4 class="m-0 h5 text-white">Love organic foods</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="m-0 h5 text-white">Expert Guidance</h4>
+                    <p class="text-white opacity-50">Comprehensive support to help your farm thrive.</p>
                   </div>
                 </div>
                 <div class="col-lg-12 d-flex align-items-start">
                   <i class="bi bi-shop me-4 display-6"></i>
                   <div>
-                    <h4 class="m-0 h5 text-white">Sell vegies</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="m-0 h5 text-white">Sustainable Farming Solutions</h4>
+                    <p class="text-white opacity-50">Promoting eco-friendly and efficient farming practices.</p>
                   </div>
                 </div>
               </div>
@@ -304,43 +319,12 @@
       </div>
     </section><!-- /About Section -->
 
-    <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
-
-      <div class="container">
-        <div class="row gy-4 justify-content-between align-items-center">
-          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">
-              <span class="play"><i class="bi bi-play-fill"></i></span>
-            </a>
-          </div>
-          <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="content-title mb-4">Plants Make Life Better</h2>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              necessitatibus placeat, atque qui voluptatem velit explicabo vitae
-              repellendus architecto provident nisi ullam minus asperiores commodi!
-              Tenetur, repellat aliquam nihil illo.
-            </p>
-            <ul class="list-unstyled list-check">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Velit explicabo vitae repellendu</li>
-              <li>Repellat aliquam nihil illo</li>
-            </ul>
-
-            <p><a href="#" class="btn-cta">Get in touch</a></p>
-          </div>
-        </div>
-      </div>
-    </section><!-- /About 3 Section -->
-
     <!-- Services 2 Section -->
     <section id="services-2" class="services-2 section dark-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur</p>
+        <h2>Featured Products</h2>
+        <p>Explore Our Best Sellers</p>
       </div><!-- End Section Title -->
 
       <div class="services-carousel-wrap">
@@ -386,8 +370,8 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Planting</h2>
+                      <span class="service-item-category">Layer Chicks</span>
+                      <h2 class="service-item-title">Top-quality egg-laying breeds.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
@@ -397,8 +381,8 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Mulching</h2>
+                      <span class="service-item-category">Broiler Chicks</span>
+                      <h2 class="service-item-title">Fast-growing breeds for premium meat production.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_3.jpg" alt="Image" class="img-fluid">
@@ -408,8 +392,8 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Watering</h2>
+                      <span class="service-item-category">Hatching Eggs</span>
+                      <h2 class="service-item-title">Fertilized eggs for your next generation of healthy chicks.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_8.jpg" alt="Image" class="img-fluid">
@@ -420,8 +404,8 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Fertilizing</h2>
+                      <span class="service-item-category">Poultry Feed</span>
+                      <h2 class="service-item-title">High-nutrition feed for growth and health.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_4.jpg" alt="Image" class="img-fluid">
@@ -431,8 +415,8 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Harvesting</h2>
+                      <span class="service-item-category">Incubators</span>
+                      <h2 class="service-item-title">Reliable incubation solutions for optimal hatching.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_5.jpg" alt="Image" class="img-fluid">
@@ -442,210 +426,20 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Mowing</h2>
+                      <span class="service-item-category">Specialty Breeds</span>
+                      <h2 class="service-item-title">Rare and exotic breeds to diversify your farm.</h2>
                     </a>
                   </div>
                   <img src="assets/img/img_sq_6.jpg" alt="Image" class="img-fluid">
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Seeding Plants</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_8.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
+              
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </section><!-- /Services 2 Section -->
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-12 testimonials section" id="testimonials">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>TESTIMONIALS</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="testimonial-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">James Smith</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-2.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Kate Smith</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Claire Anderson</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-4.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Dan Smith</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Testimonials Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Posts</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">July 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section light-background">
@@ -656,12 +450,11 @@
             <div class="col-lg-6">
               <h3>Subscribe To Our Newsletter</h3>
               <p class="opacity-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt, reprehenderit!
+              Stay updated with the latest tips, products, and exclusive offers from our poultry farm. Join our growing community of successful farmers today!
               </p>
             </div>
             <div class="col-lg-6">
-              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
+              <form action="" class="form-subscribe php-email-form">
                 <div class="form-group d-flex align-items-stretch">
                   <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
                   <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
