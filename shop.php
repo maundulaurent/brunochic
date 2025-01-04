@@ -34,8 +34,8 @@
 
       <div class="container">
         <div class="row gy-4">
-
-          <div class="col-lg-2">
+        <h4 class="content-title mb-4">Available now</h4>
+          <div class="col-lg-3">
             <article class="position-relative">
 
               <div class="post-img position-relative overflow-hidden">
@@ -43,13 +43,9 @@
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>12</span>Dec</span>
+                <span class="post-date"><span>120</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">Isa Brown</span>
                 </div>
               </div>
 
@@ -62,7 +58,7 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <article class="position-relative">
 
               <div class="post-img position-relative overflow-hidden">
@@ -70,14 +66,11 @@
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>19</span>March</span>
+                <span class="post-date"><span>98</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">H&N Nick</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                </div>
+                
               </div>
 
               <div class="post-content d-flex flex-column">
@@ -88,21 +81,18 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <article class="position-relative ">
 
               <div class="post-img position-relative overflow-hidden">
                 <img src="assets/img/neo/hero_1.jpg" class="img-fluid" alt="">
               </div>
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>24</span>June</span>
+                <span class="post-date"><span>240</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">Lohmann Brown</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                </div>
+                
               </div>
 
               <div class="post-content d-flex flex-column">
@@ -113,21 +103,18 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <article class="position-relative">
 
               <div class="post-img position-relative overflow-hidden">
                 <img src="assets/img/neo/hero_4.jpg" class="img-fluid" alt="">
               </div>
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>05</span>August</span>
+                <span class="post-date"><span>150</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">Improved Kienyeji</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                </div>
+                
               </div>
 
               <div class="post-content d-flex flex-column">
@@ -138,7 +125,7 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <article class="position-relative">
 
               <div class="post-img position-relative overflow-hidden">
@@ -146,14 +133,11 @@
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>17</span>September</span>
+                <span class="post-date"><span>100</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">John Parker</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">Hy-Line Brown</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                </div>
+                
               </div>
 
               <div class="post-content d-flex flex-column">
@@ -165,7 +149,7 @@
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <article class="position-relative ">
 
               <div class="post-img position-relative overflow-hidden">
@@ -173,14 +157,11 @@
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>07</span>December</span>
+                <span class="post-date"><span>1700</span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia White</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2">Julin White</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                </div>
+                
               </div>
 
               <div class="post-content d-flex flex-column">

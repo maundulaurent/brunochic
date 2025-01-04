@@ -122,7 +122,7 @@
               <div class="service-item">
                 <span class="number">01</span>
                 <div class="service-item-icon">
-                  <img src="assets/img/neo/category_1.jpg" alt="Image" class="img-fluid" style="width: 98px;">
+                  <img src="assets/img/neo/category_1.png" alt="Image" class="img-fluid" style="width: 98px;">
                 </div>
                 <div class="service-item-content">
                   <h3 class="service-heading">Layer Chicks</h3>
