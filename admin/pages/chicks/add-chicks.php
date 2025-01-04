@@ -1,3 +1,57 @@
+<?php
+session_start();
+require_once '../../../includes/config.php';
+
+if(isset($_POST['submit'])) {
+    try {
+        $product_name = $_POST['product_name'];
+        $description = $_POST['description'];
+        $category = $_POST['category'];
+        $price = floatval($_POST['price']);
+        $stock = intval($_POST['stock']);
+        
+        // Handle file upload
+        $image_path = '';
+        if(isset($_FILES['product_image']) && $_FILES['product_image']['error'] == 0) {
+            $upload_dir = '../../uploads/chicks/';
+            if (!file_exists($upload_dir)) {
+                mkdir($upload_dir, 0777, true);
+            }
+            
+            $file_extension = pathinfo($_FILES['product_image']['name'], PATHINFO_EXTENSION);
+            $file_name = uniqid() . '.' . $file_extension;
+            $target_path = $upload_dir . $file_name;
+            
+            if(move_uploaded_file($_FILES['product_image']['tmp_name'], $target_path)) {
+                $image_path = 'uploads/chicks/' . $file_name;
+            }
+        }
+        
+        $query = "INSERT INTO chicks (product_name, description, category, price, stock_quantity, image_path) 
+                  VALUES (:product_name, :description, :category, :price, :stock, :image_path)";
+                  
+        $stmt = $pdo->prepare($query);
+        
+        $stmt->execute([
+            ':product_name' => $product_name,
+            ':description' => $description,
+            ':category' => $category,
+            ':price' => $price,
+            ':stock' => $stock,
+            ':image_path' => $image_path
+        ]);
+        
+        $_SESSION['success'] = "Chick product added successfully!";
+        
+    } catch(PDOException $e) {
+        $_SESSION['error'] = "Error adding chick product: " . $e->getMessage();
+    }
+    
+    header("Location: add-chicks");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,18 +120,18 @@
       '.$_SESSION['success'].'
     </div>';
     unset($_SESSION['success']);
-  }
-  if(isset($_SESSION['error'])) {
-    echo '<div class="alert alert-danger alert-dismissible">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <h5><i class="icon fas fa-ban"></i> Error!</h5>
-      '.$_SESSION['error'].'
-    </div>';
-    unset($_SESSION['error']);
-  }
-  ?>
+    }
+    if(isset($_SESSION['error'])) {
+        echo '<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h5><i class="icon fas fa-ban"></i> Error!</h5>
+        '.$_SESSION['error'].'
+        </div>';
+        unset($_SESSION['error']);
+    }
+    ?>
       <div class="container-fluid">
-        <form action="process-chicks.php" method="POST" enctype="multipart/form-data">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
           <!-- SELECT2 EXAMPLE -->
           <div class="card card-default">
             <div class="card-header">
@@ -96,7 +150,7 @@
             <div class="form-group">
               <label for="product_name">Product Name</label>
               <input type="text" class="form-control" name="product_name" id="product_name" required placeholder="Enter product Name">
-            </div>                
+            </div>
             <div class="form-group">
               <label for="description">Description</label>
               <input type="text" class="form-control" name="description" id="description" required placeholder="Enter product description">
@@ -125,7 +179,7 @@
               <label for="product_image">Product image</label>
               <div class="input-group">
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" name="product_image" id="product_image">
+                  <input type="file" class="custom-file-input"  name="product_image" id="product_image" required>
                   <label class="custom-file-label" for="product_image">Choose image</label>
                 </div>
               </div>
