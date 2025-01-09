@@ -6,7 +6,7 @@ require 'includes/config.php';
 $message = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
-    // det input values
+    // get input values
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);

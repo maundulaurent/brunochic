@@ -33,6 +33,32 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           
+          <li class="nav-header">CATEGORIES</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Categories
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/chicks/add-category.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/chicks/all-categories.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Categories</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
           <li class="nav-header">ACTIVITIES</li>
           <li class="nav-item">
             <a href="#" class="nav-link">

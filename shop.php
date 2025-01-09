@@ -1,13 +1,43 @@
+<?php
+session_start();
+require_once 'includes/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Neochicks - Shop</title>
+  <title>Machcom - Shop</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <?php include_once "includes/links.php" ?>
+
+  <style>
+    .alert {
+        position: fixed; /* Make the alert float */
+        top: 80px; /* Distance from the top */
+        right: 10px; /* Distance from the right */
+        width: auto; /* Allow adjustable width */
+        max-width: 400px; /* Set a maximum width for larger screens */
+        z-index: 1000; /* Ensure the alert is above other content */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .alert-success {
+        background-color: #d4edda; /* Light green background */
+        color: #155724; /* Dark green text */
+        border: 1px solid #c3e6cb; /* Border color */
+    }
+    .alert-danger {
+        background-color: #f8d7da; /* Light red background */
+        color: #721c24; /* Dark red text */
+        border: 1px solid #f5c6cb; /* Border color */
+    }
+</style>
 
 </head>
 
@@ -29,151 +59,76 @@
       </div>
     </div><!-- End Page Title -->
 
+
+<?php
+
+try {
+    $query = "
+    SELECT chicks.*, categories.category_name 
+    FROM chicks
+    INNER JOIN categories ON chicks.category = categories.id
+  ";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $chicks = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    $_SESSION['error'] = "Error fetching chicks: " . $e->getMessage();
+    //echo "Error fetching chicks: " . $e->getMessage();
+}
+
+?>
     <!-- Blog Posts 2 Section -->
     <section id="blog-posts-2" class="blog-posts-2 section">
 
+<?php
+  if(isset($_SESSION['success'])) {
+    echo '<div class="alert alert-success alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h5><i class="icon fas fa-check"></i> Success!</h5>
+      '.$_SESSION['success'].'
+    </div>';
+    unset($_SESSION['success']);
+    }
+    if(isset($_SESSION['error'])) {
+        echo '<div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <h5><i class="icon fas fa-ban"></i> Error!</h5>
+        '.$_SESSION['error'].'
+        </div>';
+        unset($_SESSION['error']);
+    }
+?>
       <div class="container">
         <div class="row gy-4">
         <h4 class="content-title mb-4">Available now</h4>
-          <div class="col-lg-3">
-            <article class="position-relative">
 
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_4.png" class="img-fluid" alt="">
-              </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>120</span>Ksh</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">Isa Brown</span>
-                </div>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h5 class="post-title">Dolorum optio tempore voluptas dignissimos</h5>
-                <a href="blog-details" class="readmore stretched-link"></a>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
+        <?php foreach ($chicks as $chick): ?>
 
           <div class="col-lg-3">
             <article class="position-relative">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_3.jpg" class="img-fluid" alt="">
+                <img src="admin/<?php echo $chick['image_path']; ?>" class="img-fluid" alt="<?php echo $chick['product_name']; ?>">
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>98</span>Ksh</span>
+                <span class="post-date"><span><?php echo $chick['price']; ?></span>Ksh</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">H&N Nick</span>
+                  <i class="bi bi-feather"></i> <span class="ps-2"><?php echo $chick['category_name']; ?></span>
                 </div>
-                
               </div>
 
               <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Nisi magni odit consequatur autem nulla dolorem</h3>
-                <a href="blog-details" class="readmore stretched-link"></a>
+
+                <h5 class="post-title"><?php echo $chick['product_name']; ?></h5>
+                <p class="post-description"><?php echo $chick['description']; ?></p>
+                <a href="chick-details?id=<?php echo $chick['id']; ?>" class="readmore stretched-link"></a>
               </div>
 
             </article>
           </div><!-- End post list item -->
 
-          <div class="col-lg-3">
-            <article class="position-relative ">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>240</span>Ksh</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">Lohmann Brown</span>
-                </div>
-                
-              </div>
-
-              <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</h3>
-                <a href="blog-details" class="readmore stretched-link"></a>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-3">
-            <article class="position-relative">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_4.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>150</span>Ksh</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">Improved Kienyeji</span>
-                </div>
-                
-              </div>
-
-              <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Non rem rerum nam cum quo minus explicabo eius exercitationem.</h3>
-                <a href="blog-details" class="readmore stretched-link"></a>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-3">
-            <article class="position-relative">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_5.jpg" class="img-fluid" alt="">
-              </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>100</span>Ksh</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">Hy-Line Brown</span>
-                </div>
-                
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Accusamus quaerat aliquam qui debitis facilis consequatur</h3>
-                <a href="blog-details" class="readmore stretched-link"></a>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-3">
-            <article class="position-relative ">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/neo/hero_6.jpg" class="img-fluid" alt="">
-              </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>1700</span>Ksh</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-feather"></i> <span class="ps-2">Julin White</span>
-                </div>
-                
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
-                <a href="blog-details" class="readmore stretched-link"></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
+        <?php endforeach; ?>
         </div>
       </div>
 

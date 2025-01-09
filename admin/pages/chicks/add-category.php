@@ -2,66 +2,31 @@
 session_start();
 require_once '../../../includes/config.php';
 
-// Fetch categories
-try {
-  $query = "SELECT id, category_name FROM categories";
-  $categories_stmt = $pdo->prepare($query);
-  $categories_stmt->execute();
-  $categories = $categories_stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch(PDOException $e) {
-  $_SESSION['error'] = "Error fetching categories: " . $e->getMessage();
-  $categories = [];
-}
-
-
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     try {
-        $product_name = $_POST['product_name'];
+        $category_name = $_POST['category_name'];
         $description = $_POST['description'];
-        $category = $_POST['category'];
-        $price = floatval($_POST['price']);
-        $stock = intval($_POST['stock']);
         
-        // Handle file upload
-        $image_path = '';
-        if(isset($_FILES['product_image']) && $_FILES['product_image']['error'] == 0) {
-            $upload_dir = '../../uploads/chicks/';
-            if (!file_exists($upload_dir)) {
-                mkdir($upload_dir, 0777, true);
-            }
-            
-            $file_extension = pathinfo($_FILES['product_image']['name'], PATHINFO_EXTENSION);
-            $file_name = uniqid() . '.' . $file_extension;
-            $target_path = $upload_dir . $file_name;
-            
-            if(move_uploaded_file($_FILES['product_image']['tmp_name'], $target_path)) {
-                $image_path = 'uploads/chicks/' . $file_name;
-            }
-        }
-        
-        $query = "INSERT INTO chicks (product_name, description, category, price, stock_quantity, image_path) 
-                  VALUES (:product_name, :description, :category, :price, :stock, :image_path)";
+        $query = "INSERT INTO categories (category_name, description) 
+                  VALUES (:category_name, :description)";
                   
         $stmt = $pdo->prepare($query);
         
         $stmt->execute([
-            ':product_name' => $product_name,
-            ':description' => $description,
-            ':category' => $category,
-            ':price' => $price,
-            ':stock' => $stock,
-            ':image_path' => $image_path
+            ':category_name' => $category_name,
+            ':description' => $description
         ]);
         
-        $_SESSION['success'] = "Chick product added successfully!";
+        $_SESSION['success'] = "Category added successfully!";
         
     } catch(PDOException $e) {
-        $_SESSION['error'] = "Error adding chick item: " . $e->getMessage();
+        $_SESSION['error'] = "Error adding category into the database: " . $e->getMessage();
     }
     
     header("Location: " . $_SERVER['PHP_SELF']);
     exit();
 }
+
 
 
 ?>
@@ -121,6 +86,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         border: 1px solid #f5c6cb; /* Border color */
     }
 </style>
+
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -137,12 +104,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add Chicks</h1>
+            <h1>Add Category</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="./">Home</a></li>
-              <li class="breadcrumb-item active">Add Chicks</li>
+              <li class="breadcrumb-item active">Add Category</li>
             </ol>
           </div>
         </div>
@@ -153,7 +120,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     <section class="content">
   <?php
   if(isset($_SESSION['success'])) {
-    echo '<div class="alert alert-success  alert-dismissible">
+    echo '<div class="alert alert-success alert-dismissible">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <h5><i class="icon fas fa-check"></i> Success!</h5>
       '.$_SESSION['success'].'
@@ -174,7 +141,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
           <!-- SELECT2 EXAMPLE -->
           <div class="card card-default">
             <div class="card-header">
-              <h3 class="card-title">Basic Information Form</h3>
+              <h3 class="card-title">Add Category Form</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -186,51 +153,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             <div class="card-body">
               <div class="row">
                 <div class="col-md-6">
-            <div class="form-group">
-              <label for="product_name">Product Name</label>
-              <input type="text" class="form-control" name="product_name" id="product_name" required placeholder="Enter product Name">
-            </div>
-            <div class="form-group">
-              <label for="description">Description</label>
-              <input type="text" class="form-control" name="description" id="description" required placeholder="Enter product description">
-              
-            </div>                
-            <div class="form-group">
-              <label>Product Category</label>
-              <select class="form-control select2" name="category" style="width: 100%;" required>
-              <option value="" disabled selected>Select Category</option>
-                <?php foreach ($categories as $category): ?>
-                  <option value="<?php echo htmlspecialchars($category['id']); ?>">
-                    <?php echo htmlspecialchars($category['category_name']); ?>
-                  </option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="price">Price per Product</label>
-              <input type="number" step="0.01" class="form-control" name="price" id="price" required placeholder="Enter price">
-            </div>
-            <div class="form-group">
-              <label for="stock">Number in stock</label>
-              <input type="number" class="form-control" name="stock" id="stock" required placeholder="Enter stock quantity">
-            </div>
-            <div class="form-group">
-              <label for="product_image">Product image</label>
-              <div class="input-group">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input"  name="product_image" id="product_image" required>
-                  <label class="custom-file-label" for="product_image">Choose image</label>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <button type="submit" name="submit" class="btn btn-success">Save</button>
-            </div>
-          </div>
+                    <div class="form-group">
+                        <label for="category_name">Category Name *</label>
+                        <input type="text" class="form-control" name="category_name" id="category_name" required placeholder="Enter category Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description *</label>
+                        <input type="text" class="form-control" name="description" id="description" required placeholder="Enter category description">
+                    
+                    </div>
+                    <div class="">
+                        <button type="submit" name="submit" class="btn btn-success">Save Category</button>
+                    </div>
+                </div>            
               <!-- /.card -->
-                </div>
               </div>
               <!-- /.row -->            
             </div>          
@@ -283,7 +219,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- Page specific script -->
 
 
 </body>

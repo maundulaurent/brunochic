@@ -46,9 +46,8 @@
             </ul>
           </li>
           <li><a href="testimonials">Testimonials</a></li>
-          <li><a href="blog">Blog</a></li>
           <li><a href="contact">Contact</a></li>
-          <li><a href="blog">FAQs</a></li>
+          <li><a href="faqs">FAQs</a></li>
           <li><a href="shop">Shop</a></li>
           <li><a href="signup">Sign Up</a></li>          
         </ul>
