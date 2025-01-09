@@ -71,6 +71,34 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comments'])) {
   exit();
 }
 
+// Adding item to cart
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
+  try {
+      $product_id = intval($_POST['product_id']);
+      $product_name = $chick['product_name'];
+      $price = floatval($chick['price']);
+      $quantity = 1; // Default quantity to 1
+      $total_price = $price * $quantity;
+
+      $query = "INSERT INTO cart (product, price, quantity, total_price) 
+                VALUES (:product, :price, :quantity, :total_price)";
+      $stmt = $pdo->prepare($query);
+      $stmt->execute([
+          ':product' => $product_name,
+          ':price' => $price,
+          ':quantity' => $quantity,
+          ':total_price' => $total_price,
+      ]);
+
+      $_SESSION['success'] = "Product added to cart successfully!";
+      header("Location: cart.php");
+      exit();
+  } catch (PDOException $e) {
+      $_SESSION['error'] = "Error adding product to cart: " . $e->getMessage();
+  }
+}
+
+
 ?>
 
 
@@ -387,10 +415,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comments'])) {
     <span class="close-btn" id="closeModal">&times;</span>
     <h3>Add item to cart</h3>
     <p>Do you want to add <strong><?php echo(htmlspecialchars($chick['product_name'])); ?></strong> into your cart?</p>
-    <form action="cart.php" method="POST">
+    <form action="" method="POST">
       <input type="hidden" name="product_id" value="<?php echo htmlspecialchars($chick['id']); ?>">
       
-      <button type="submit" class="btn btn-primary">Add to cart</button>
+      <button type="submit" name="add_to_cart" class="btn btn-primary">Add to cart</button>
     </form>
   </div>
 </div>
