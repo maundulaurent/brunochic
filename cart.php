@@ -23,7 +23,7 @@ try {
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Testimonials - AgriCulture Bootstrap Template</title>
+  <title>Machcom - cart</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -158,6 +158,11 @@ try {
             
         </div>
         <?php endforeach; ?>
+        <div style="text-align: right; margin-top: 15px;">
+            <div class="container">
+                <a href="checkout" class="btn btn-primary " >Check Out Items</a>
+            </div>
+        </div>
 <?php endif; ?>
         
     </section><!-- /Testimonials Section -->

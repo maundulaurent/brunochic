@@ -15,3 +15,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- lets use tailwind css -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
